@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>SUMA</h1>
+    <form action="">
+        <input type="text" id="numero1">
+        <input type="text" id="numero2">
+        <input type="button" value="sumar" onclick="alert( suma());">
+        <br>
+        <h1>RESTA</h1>
+        <input type="text" id="numero3">
+        <input type="text" id="numero4">
+        <input type="button" value="restar" onclick="alert( resta());">
+    </form>
+
+    <script>
+        var suma  = function(numero1,numero2) {
+            var numero1 = parseFloat(document.getElementById("numero1").value);
+            var numero2 = parseFloat(document.getElementById("numero2").value);
+            var resultado = numero1 + numero2;
+           
+            return resultado;
+           
+        }
+        var resta  = function(numero3,numero4) {
+            var numero3 = parseFloat(document.getElementById("numero3").value);
+            var numero4 = parseFloat(document.getElementById("numero4").value);
+            var resultado = numero3 - numero4;
+            return resultado;
+        }
+                
+    </script>
+</body>
+</html>
